@@ -18,9 +18,107 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+            <!-- FORM -->
+            <form id="loan-form">
+              <!-- Loan Amount -->
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="amount"
+                    placeholder="Loan Amount"
+                    aria-label="Loan Amount"
+                  />
+                </div>
+              </div>
+              <!-- Interest Rate -->
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">%</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="interest"
+                    placeholder="Interest Rate"
+                    aria-label="Interest Rate"
+                  />
+                </div>
+              </div>
+              <!-- Years to pay -->
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="years"
+                    placeholder="Years to Repay"
+                    aria-label="Years to Repay"
+                  />
+                </div>
+              </div>
+              <!-- Submit -->
+              <div class="form-group">
+                <button type="submit" class="btn btn-dark btn-block">
+                  Calculate
+                </button>
+              </div>
+            </form>
+            <!-- /FORM -->
+            <div id="results" class="">
+              <h3 class="mt-4">Results</h3>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Montly Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-payment"
+                    readonly
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-payment"
+                    readonly
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Monthly Interest</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-interest"
+                    readonly
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
