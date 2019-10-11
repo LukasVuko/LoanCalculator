@@ -15,7 +15,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
+    <style>
+      #loading,
+      #results {
+        display: none;
+      }
+    </style>
     <title>Hello, world!</title>
   </head>
   <body class="bg-dark">
@@ -77,9 +82,9 @@
             </form>
             <!-- /FORM/INPUT -->
             <!-- LOADER -->
-            <!-- <div id="load">
+            <div id="loading">
               <img src="img/loading.gif" alt="" />
-            </div> -->
+            </div>
             <!-- RESULTS -->
             <div id="results">
               <h3 class="mt-4">Results</h3>
