@@ -24,7 +24,7 @@
         <div class="col-md-6 mx-auto">
           <div class="card card-body text-center mt-5">
             <h1 class="heading display-5 pb-3">Loan Calculator</h1>
-            <!-- FORM -->
+            <!-- FORM/INPUT -->
             <form id="loan-form">
               <!-- Loan Amount -->
               <div class="form-group">
@@ -75,8 +75,13 @@
                 </button>
               </div>
             </form>
-            <!-- /FORM -->
-            <div id="results" class="">
+            <!-- /FORM/INPUT -->
+            <!-- LOADER -->
+            <!-- <div id="load">
+              <img src="img/loading.gif" alt="" />
+            </div> -->
+            <!-- RESULTS -->
+            <div id="results">
               <h3 class="mt-4">Results</h3>
               <div class="form-group">
                 <div class="input-group mb-3">
@@ -103,12 +108,12 @@
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Monthly Interest</span>
+                    <span class="input-group-text">Total Interest</span>
                   </div>
                   <input
                     type="number"
                     class="form-control"
-                    id="monthly-interest"
+                    id="total-interest"
                     readonly
                   />
                 </div>
@@ -136,5 +141,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
